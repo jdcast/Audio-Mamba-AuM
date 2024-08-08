@@ -656,23 +656,26 @@ class AudioMamba(nn.Module):
                 residual_in_fp32=self.residual_in_fp32,
             )
 
-        # return only cls token if it exists
-        if self.if_cls_token:
-            if self.use_double_cls_token:
-                return (hidden_states[:, token_position[0], :] + hidden_states[:, token_position[1], :]) / 2
-            else:
-                return hidden_states[:, token_position, :]
+        # Return all token embeddings except for the classification token
+        return torch.cat((hidden_states[:, :token_position, :], hidden_states[:, token_position+1:, :]), dim=1) #hidden_states
 
-        if self.final_pool_type == 'none':
-            return hidden_states[:, -1, :]
-        elif self.final_pool_type == 'mean':
-            return hidden_states.mean(dim=1)
-        elif self.final_pool_type == 'max':
-            return hidden_states
-        elif self.final_pool_type == 'all':
-            return hidden_states
-        else:
-            raise NotImplementedError
+        # # return only cls token if it exists
+        # if self.if_cls_token:
+        #     if self.use_double_cls_token:
+        #         return (hidden_states[:, token_position[0], :] + hidden_states[:, token_position[1], :]) / 2
+        #     else:
+        #         return hidden_states[:, token_position, :]
+        #
+        # if self.final_pool_type == 'none':
+        #     return hidden_states[:, -1, :]
+        # elif self.final_pool_type == 'mean':
+        #     return hidden_states.mean(dim=1)
+        # elif self.final_pool_type == 'max':
+        #     return hidden_states
+        # elif self.final_pool_type == 'all':
+        #     return hidden_states
+        # else:
+        #     raise NotImplementedError
 
     # @autocast() # disabled because accelerate training configs already incorporate autocast
     def forward(self, x, return_features=False, inference_params=None, if_random_cls_token_position=False, if_random_token_rank=False, patch_size=None, strides=None): # NOTE: For now, these are all being used as default. Later, these could be set through the args param
