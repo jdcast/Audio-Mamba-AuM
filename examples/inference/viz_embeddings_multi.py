@@ -126,7 +126,7 @@ if __name__ == '__main__':
         imagenet_pretrain=False,
         imagenet_pretrain_path=None,
         aum_pretrain=True,
-        aum_pretrain_path='/home/jdcast/Audio-Mamba-AuM/exps/aum-small_imgnet-audioset-tektite-20-epochs/models/best_audio_model.pth',
+        aum_pretrain_path='/exps/aum-small_imgnet-audioset-tektite-20-epochs-1024-samples/models/best_audio_model.pth',
         aum_variant='Bi-Bi',
         device='cuda' if torch.cuda.is_available() else 'cpu',
     )
