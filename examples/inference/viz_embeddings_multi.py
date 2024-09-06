@@ -109,25 +109,25 @@ def process_and_plot(audio_path, model, data_args, model_args, output_dir):
 if __name__ == '__main__':
     # Define paths
     audio_dir = '/home/jdcast/wav_training_data/TK/wav/'  # Replace with your directory containing audio files
-    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays/'  # Replace with your desired output directory
+    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays_aum-small_imgnet-audioset-tektite-20-epochs/'  # Replace with your desired output directory
     os.makedirs(output_dir, exist_ok=True)
 
     # Model and data setup
     data_args = Namespace(
         num_mel_bins=128,
         target_length=1024,
-        mean=-5.0767093,
-        std=4.4533687,
+        mean=-8.333124,
+        std=5.1453834,
     )
 
     model_args = Namespace(
-        model_type='base',
-        n_classes=309,
+        model_type='small',
+        n_classes=5,
         imagenet_pretrain=False,
         imagenet_pretrain_path=None,
         aum_pretrain=True,
-        aum_pretrain_path='models/aum-base_audioset-vggsound.pth',
-        aum_variant='Fo-Bi',
+        aum_pretrain_path='/home/jdcast/Audio-Mamba-AuM/exps/aum-small_imgnet-audioset-tektite-20-epochs/models/best_audio_model.pth',
+        aum_variant='Bi-Bi',
         device='cuda' if torch.cuda.is_available() else 'cpu',
     )
 
