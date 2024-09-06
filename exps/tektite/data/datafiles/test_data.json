@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170503010002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426003002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510230002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411202002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601063002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525023002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170503040002.wav",
+      "labels": "/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426183002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411095002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525193002.wav",
+      "labels": "/m/boat,/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411052002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419030002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601200002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170420010002.wav",
+      "labels": "/m/boat"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170519023002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419183002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170503003002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601053002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601083002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170427033002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601133002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170420013002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502200002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411115002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502103002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510133002.wav",
+      "labels": "/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419150002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525140002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426170002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510123002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525213002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419220002.wav",
+      "labels": "/m/boat,/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518223002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411185002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510000002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426103002.wav",
+      "labels": "/m/boat,/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601103002.wav",
+      "labels": "/m/boat"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419040002.wav",
+      "labels": "/m/chorus,/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426093002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502223002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170602020002.wav",
+      "labels": "/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426133002.wav",
+      "labels": "/m/boat,/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419060002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411155002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518033002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411192002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502120002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518210002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510203002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601003002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601020002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510103002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170420023002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525183002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426070002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170427030002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502170002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170427003002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510183002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170511013002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510130002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419070002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170519013002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411125002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525073002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426120002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426233002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518153002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411182002.wav",
+      "labels": "/m/boat"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170502210002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419110002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419020002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518203002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411175002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411025002.wav",
+      "labels": "/m/boat,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518103002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518170002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170426000002.wav",
+      "labels": "/m/chorus,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419103002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170525113002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170511020002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518010002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518120002.wav",
+      "labels": "/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170510193003.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419190002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170411012002.wav",
+      "labels": "/m/pulse"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170419083002.wav",
+      "labels": "/m/other,/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170601233002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170503000002.wav",
+      "labels": "/m/pulse,/m/tonal"
+    },
+    {
+      "wav": "/home/jdcast/wav_training_data/TK/wav/1678008359.170518163002.wav",
+      "labels": "/m/boat,/m/pulse"
+    }
+  ]
+}
