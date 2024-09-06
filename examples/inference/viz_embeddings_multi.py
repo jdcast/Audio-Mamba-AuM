@@ -94,7 +94,7 @@ def process_and_plot(audio_path, model, data_args, model_args, output_dir):
     # Option 3: Overlay the PCA-Reduced Embeddings on the Spectrogram
     plt.figure(figsize=(12, 6))
     plt.imshow(np.transpose(fbank_np), aspect='auto', origin='lower', cmap='gray', alpha=0.7)
-    plt.imshow(reduced_grid, cmap='plasma', alpha=0.3, extent=(0, 1024, 0, 128), aspect='auto', origin='lower')
+    plt.imshow(reduced_grid, cmap='gray', alpha=0.3, extent=(0, 1024, 0, 128), aspect='auto', origin='lower')
     plt.colorbar(label='Magnitude / PCA Reduced Value')
     plt.title('Mel-Spectrogram with Overlayed PCA-Reduced Embeddings')
     plt.xlabel('Time Frames')
@@ -109,7 +109,7 @@ def process_and_plot(audio_path, model, data_args, model_args, output_dir):
 if __name__ == '__main__':
     # Define paths
     audio_dir = '/home/jdcast/wav_training_data/TK/wav/'  # Replace with your directory containing audio files
-    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays_aum-small_imgnet-audioset-tektite-20-epochs-bw/'  # Replace with your desired output directory
+    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays_aum-small_imgnet-audioset-tektite-20-epochs-bw-all/'  # Replace with your desired output directory
     os.makedirs(output_dir, exist_ok=True)
 
     # Model and data setup
@@ -126,7 +126,7 @@ if __name__ == '__main__':
         imagenet_pretrain=False,
         imagenet_pretrain_path=None,
         aum_pretrain=True,
-        aum_pretrain_path='/exps/aum-small_imgnet-audioset-tektite-20-epochs-1024-samples/models/best_audio_model.pth',
+        aum_pretrain_path='/home/jdcast/Audio-Mamba-AuM/exps/aum-small_imgnet-audioset-tektite-20-epochs-1024-samples/models/best_audio_model.pth',
         aum_variant='Bi-Bi',
         device='cuda' if torch.cuda.is_available() else 'cpu',
     )
