@@ -11,6 +11,7 @@ import torchaudio
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
 import src.models as models
 from IPython.display import Audio, display
 import csv
@@ -22,6 +23,31 @@ sys.path.append("../../")
 class Namespace:
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
+
+
+def cluster_embeddings(reduced_embeddings, n_clusters, H_patches, W_patches, fbank_np, audio_path, filename):
+    """
+    Perform K-means clustering on the PCA-reduced patch embeddings.
+    """
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0)
+    clusters = kmeans.fit_predict(reduced_embeddings)
+
+    # Reshape clusters to match the patch grid
+    cluster_grid = clusters.reshape(H_patches, W_patches)
+
+    plt.figure(figsize=(12, 6))
+    plt.imshow(np.transpose(fbank_np), aspect='auto', origin='lower', cmap='gray', alpha=0.7)
+    plt.imshow(cluster_grid, cmap='tab20', alpha=0.5, extent=(0, 1024, 0, 128), aspect='auto', origin='lower')
+    plt.colorbar(label='Cluster ID')
+    plt.title('Mel-Spectrogram with Overlayed Patch Embedding Clusters')
+    plt.xlabel('Time Frames')
+    plt.ylabel('Frequency Bins')
+    # plt.show()
+
+    # Save the plot
+    filename = os.path.splitext(os.path.basename(audio_path))[0]
+    plt.savefig(os.path.join(output_dir, f"{filename}_cluster_overlay_plot.png"))
+    plt.close()
 
 # Function to process and plot each audio file
 def process_and_plot(audio_path, model, data_args, model_args, output_dir):
@@ -94,7 +120,7 @@ def process_and_plot(audio_path, model, data_args, model_args, output_dir):
     # Option 3: Overlay the PCA-Reduced Embeddings on the Spectrogram
     plt.figure(figsize=(12, 6))
     plt.imshow(np.transpose(fbank_np), aspect='auto', origin='lower', cmap='gray', alpha=0.7)
-    plt.imshow(reduced_grid, cmap='gray', alpha=0.3, extent=(0, 1024, 0, 128), aspect='auto', origin='lower')
+    plt.imshow(reduced_grid, cmap='plasma', alpha=0.3, extent=(0, 1024, 0, 128), aspect='auto', origin='lower')
     plt.colorbar(label='Magnitude / PCA Reduced Value')
     plt.title('Mel-Spectrogram with Overlayed PCA-Reduced Embeddings')
     plt.xlabel('Time Frames')
@@ -105,11 +131,14 @@ def process_and_plot(audio_path, model, data_args, model_args, output_dir):
     plt.savefig(os.path.join(output_dir, f"{filename}_overlay_plot.png"))
     plt.close()
 
+    # Assuming reduced_embeddings is from the PCA step
+    cluster_embeddings(reduced_embeddings, 4, H_patches, W_patches, fbank_np, audio_path, filename)
+
 # Main setup
 if __name__ == '__main__':
     # Define paths
     audio_dir = '/home/jdcast/wav_training_data/TK/wav/'  # Replace with your directory containing audio files
-    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays_aum-small_imgnet-audioset-tektite-20-epochs-bw-all/'  # Replace with your desired output directory
+    output_dir = '/home/jdcast/wav_training_data/TK/visualizations/embeddings/AuM/mel_spectro_and_patch_overlays_aum-small_imgnet-audioset-tektite-20-epochs-bw-color-and-clusters/'  # Replace with your desired output directory
     os.makedirs(output_dir, exist_ok=True)
 
     # Model and data setup
