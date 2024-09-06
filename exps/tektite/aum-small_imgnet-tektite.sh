@@ -10,11 +10,11 @@ aum_pretrain_tstride=16
 
 bal=bal
 lr=1e-5
-epoch=5
+epoch=20
 tr_data=./data/datafiles/train_data.json
-lrscheduler_start=2
-lrscheduler_step=1
-lrscheduler_decay=0.5
+lrscheduler_start=5
+lrscheduler_step=2
+lrscheduler_decay=0.75
 
 te_data=./data/datafiles/test_data.json
 label_csv=./data/class_labels_indices.csv
